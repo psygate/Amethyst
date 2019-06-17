@@ -1,0 +1,57 @@
+name: amethyst
+version: 0.1
+description: A player driven protection plugin
+load: STARTUP
+author: psygate
+main: com.psygate.minecraft.spigot.sovereignty.amethyst.Amethyst
+database: false
+depends: [nucleus, ivory]
+loadbefore: [sanctuary, gaia]
+
+
+commands:
+  listreinforcementmaterials:
+    default: true
+    usage: /listreinforcementmaterials
+    description: Lists all available reinforcement materials and stats.
+    aliases: [lrm, alrm]
+  place:
+    default: true
+    usage: /place (<grouname>)
+    description: Enables place mode for reinforcements. Hold the reinforcement material in your hand.
+    aliases: [ctf, apl]
+  punch:
+    default: true
+    usage: /punch
+    description: Toggle punch mode. Punching blocks with the reinforcement material will reinforce them.
+    aliases: [ctr, app, apr]
+  lock:
+    default: true
+    usage: /lock
+    description: Combines punch / place for you.
+    aliases: [aplo]
+  reinforcementreset:
+    default: true
+    usage: /reinforcementreset
+    description: Turns reinforcement mode off.
+    aliases: [reinforcementoff, cto, apre]
+  bypass:
+    default: true
+    usage: /bypass (on|off)
+    description: Allows bypassing of reinforcements.
+    liases: [apby, ctb]
+  info:
+    default: true
+    usage: /info (on|off)
+    description: Allows inspection of reinforcements.
+    aliases: [cti, api]
+  debugplayer:
+    default: op
+    usage: /debugplayer <name>
+    description: Lists state information about a player.
+    permission: amethyst.admin.debugplayer
+  areareinforce:
+    default: op
+    usage: /areareinforce <groupname> <reinforcement_material> <material> <radius>
+    description: Area reinforces blocks
+    permission: amethyst.admin.areareinforce

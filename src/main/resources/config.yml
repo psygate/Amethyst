@@ -1,0 +1,85 @@
+reinforcements:
+  - material: STONE
+    amount: 1
+    breaks:   25
+    fire_proof: false
+    fire_supression: false
+    hardening_time:  10m
+  - material: IRON_INGOT
+    amount: 1
+    breaks:   250
+    fire_proof: false
+    fire_supression: false
+    hardening_time:  1d
+
+non-reinforcible:
+   - BEDROCK
+   - ENDER_PORTAL_FRAME
+#   - SAPLING
+   - LONG_GRASS
+   - DEAD_BUSH
+   - PISTON_EXTENSION
+   - PISTON_MOVING_PIECE
+   - RED_ROSE
+   - YELLOW_FLOWER
+   - BROWN_MUSHROOM
+   - RED_MUSHROOM
+   - TNT
+   - FIRE
+#   - CROPS
+   - SNOW
+   - ICE
+#   - CACTUS
+#   - SUGAR_CANE_BLOCK
+   - PORTAL
+   - CAKE_BLOCK
+#   - VINE
+#   - NETHER_WARTS
+   - ENDER_PORTAL
+   - AIR
+   - FIRE
+
+settings:
+  redstone_distance: 8
+  normalize_reinforcement_strengths: true
+  # Hand, wood, stone, iron, gold, diamond, minimum
+  normalize_to: minimum
+  normalization_reference_material: STONE
+  accessibles:
+    - WOODEN_DOOR
+    - IRON_DOOR
+    - CHEST
+    - ENDER_CHEST
+    - FURNACE
+    - TRAP_DOOR
+    - IRON_TRAPDOOR
+    - LEVER
+    - HOPPER
+    - DROPPER
+    - DISPENSER
+    - TRAPPED_CHEST
+    - BEACON
+    - JUKEBOX
+    - SPONGE
+    - FENCE_GATE
+    - ACACIA_DOOR
+    - DARK_OAK_DOOR
+    - JUNGLE_DOOR
+    - BIRCH_DOOR
+    - SPRUCE_DOOR
+    - FENCE_GATE
+    - ACACIA_FENCE_GATE
+    - DARK_OAK_FENCE_GATE
+    - JUNGLE_FENCE_GATE
+    - BIRCH_FENCE_GATE
+    - SPRUCE_FENCE_GATE
+    - BED_BLOCK
+    - BED
+    - FURNACE
+    - BURNING_FURNACE
+
+playerstatecache:
+  expire_after_access: 10m
+  expire_after_write: 10m
+  minimum_size: 100
+  maximum_size: 1000
